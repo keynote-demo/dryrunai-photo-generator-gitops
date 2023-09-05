@@ -1,0 +1,15 @@
+app:
+  name: dryrunai-photo-generator-app
+  namespace: dryrunai
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/dryrunai-photo-generator
+  org: keynote-demo
+  name: dryrunai-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: dryrunai/photo-generator-app
+  tag: latest
